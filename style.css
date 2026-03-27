@@ -939,14 +939,19 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   color: var(--text-muted);
 }
-/* International Press Grid (3 centered cards) */
+/* International Press Grid (4 centered cards) */
 .press-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   max-width: 900px;
   margin: 0 auto;
 }
 .press-grid {
   margin-top: 2rem;
+}
+.press-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
 }
 /* ═══════════════════════════════════════════════════════════════════
    ITINERARY / TIMELINE
