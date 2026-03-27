@@ -939,8 +939,15 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   color: var(--text-muted);
 }
-
-
+/* International Press Grid (3 centered cards) */
+.press-grid {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  margin: 0 auto;
+}
+.press-grid {
+  margin-top: 2rem;
+}
 /* ═══════════════════════════════════════════════════════════════════
    ITINERARY / TIMELINE
 ═══════════════════════════════════════════════════════════════════ */
