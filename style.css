@@ -1521,3 +1521,79 @@ img[src*="placeholder"] {
   background: var(--parchment-dk);
   object-fit: none !important;
 }
+
+/* LOGO SECTION REFINED */
+
+.logo-strip {
+  padding: 2rem 0 2.5rem;
+  background: var(--ivory);
+  text-align: center;
+}
+
+.logo-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* ORGANISER */
+.main-logo {
+  height: 250px;   /* was ~80–100 */
+  object-fit: contain;
+  opacity: 0.95;
+  margin-top: 0.5rem;
+  transition: all 0.4s ease;
+}
+
+.main-logo:hover {
+  transform: scale(1.05);
+}
+
+/* DIVIDER */
+.logo-divider {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 2rem auto;
+}
+
+/* COMMITTEES */
+.committee-logos {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.committee-logos img {
+  height: 190px;
+  opacity: 0.85;
+  filter: grayscale(100%) contrast(0.9);
+}
+
+.committee-logos img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+.logo-container img {
+  image-rendering: auto;
+}
+/* ENTIRE SECTION CENTERED */
+.logo-strip {
+  text-align: center;
+}
+
+/* ORGANISER BLOCK */
+.organiser-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN LOGO PERFECT CENTER */
+.main-logo {
+  display: block;
+  margin: 0 auto;
+}

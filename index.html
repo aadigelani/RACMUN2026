@@ -168,7 +168,28 @@
       </div>
     </div>
   </section>
+  <section class="logo-strip">
 
+  <!-- ORGANISER -->
+  <div class="organiser-block reveal" style="--delay:0s">
+    <p class="logo-label">Organised By</p>
+    <img class="main-logo" src="assets/images/rotaract-logo.png" alt="Rotaract Club">
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="logo-divider reveal" style="--delay:0.2s"></div>
+
+  <!-- COMMITTEES -->
+  <div class="committee-block reveal" style="--delay:0.4s">
+    <p class="logo-label">Committees Simulated</p>
+
+    <div class="committee-logos">
+      <img src="assets/images/unsc-logo.png" alt="UNSC">
+      <img src="assets/images/loksabha-logo.png" alt="Lok Sabha">
+    </div>
+  </div>
+
+</section>
 
   <!-- ════════════════════════════════════════
        ABOUT SECTION
@@ -441,7 +462,7 @@
         </div>
       </div>
       <div class="leader-info">
-        <h4 class="leader-name">Name Here</h4>
+        <h4 class="leader-name">Afreen Islam</h4>
         <p class="leader-role">International Press</p>
       </div>
     </div>
@@ -455,7 +476,7 @@
         </div>
       </div>
       <div class="leader-info">
-        <h4 class="leader-name">Name Here</h4>
+        <h4 class="leader-name">Pragya Bharti</h4>
         <p class="leader-role">International Press</p>
       </div>
     </div>
@@ -469,7 +490,7 @@
         </div>
       </div>
       <div class="leader-info">
-        <h4 class="leader-name">Name Here</h4>
+        <h4 class="leader-name">Ashish Kumar</h4>
         <p class="leader-role">International Press</p>
       </div>
     </div>
@@ -482,7 +503,7 @@
         </div>
       </div>
       <div class="leader-info">
-      <h4 class="leader-name">Name Here</h4>
+      <h4 class="leader-name">Tanvi Dhanuka</h4>
       <p class="leader-role">International Press</p>
       </div>
     </div>
@@ -759,5 +780,20 @@
 
 
   <script src="script.js"></script>
+<script>
+  const elements = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  elements.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
