@@ -1597,3 +1597,53 @@ img[src*="placeholder"] {
   display: block;
   margin: 0 auto;
 }
+/* ═══════════════════════════════════
+   TEAM SECTION
+═══════════════════════════════════ */
+
+.section--team {
+  background: var(--ivory);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.team-image-wrap {
+  position: relative;
+  margin-top: 3rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 48px rgba(30,26,22,0.08);
+}
+
+.team-image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-silk), filter 0.6s var(--ease-silk);
+  filter: contrast(1.05) sepia(0.08);
+}
+
+/* Hover effect */
+.team-image-wrap:hover img {
+  transform: scale(1.03);
+  filter: contrast(1.1) sepia(0.15);
+}
+
+/* Overlay */
+.team-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(30,26,22,0.8), transparent);
+}
+
+.team-overlay p {
+  font-family: var(--font-lato);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ivory);
+}
