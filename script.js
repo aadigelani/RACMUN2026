@@ -1,14 +1,13 @@
 /* ═══════════════════════════════════════════════════════════════════
    RACMUN — Main JavaScript
-   Features: Countdown Timer | Scroll Animations | Nav Scroll | Mobile Nav
+   
 ═══════════════════════════════════════════════════════════════════ */
 
 'use strict';
 
 /* ─────────────────────────────────────────────
    COUNTDOWN TIMER
-   ✏️ EDIT: Change TARGET_DATE to your event date
-   Format: 'YYYY-MM-DDTHH:MM:SS'
+   
 ───────────────────────────────────────────── */
 const TARGET_DATE = new Date('2026-04-15T10:00:00');
 
